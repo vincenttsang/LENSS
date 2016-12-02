@@ -106,9 +106,9 @@ public class DecodeActivity extends Activity implements SurfaceHolder.Callback {
 					} catch (IOException e) {
 						e.printStackTrace();
 					}
-					decoder.configure(format, surface, null, 0);
-					//Added by Yukun Zeng
-					//decoder.configure(format, outputSurface.getSurface(), null, 0);
+					//decoder.configure(format, surface, null, 0);
+					//Added by Yukun
+					decoder.configure(format, outputSurface.getSurface(), null, 0);
 					break;
 				}
 			}

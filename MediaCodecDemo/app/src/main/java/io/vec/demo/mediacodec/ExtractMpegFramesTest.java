@@ -369,7 +369,6 @@ public class ExtractMpegFramesTest extends AndroidTestCase {
                 mSurfaceTexture = (SurfaceTexture) getSurfaceTexture.invoke(surface);
             } catch (NoSuchMethodException e) {
                 e.printStackTrace();
-                return;
             } catch (IllegalAccessException e) {
                 e.printStackTrace();
             } catch (InvocationTargetException e) {
