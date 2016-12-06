@@ -8,6 +8,7 @@ import android.widget.Button;
 
 import com.qualcomm.snapdragon.sdk.recognition.sample.FacialRecognitionActivity;
 import com.qualcomm.snapdragon.sdk.sample.CameraPreviewActivity;
+import com.qualcomm.snapdragon.sdk.sample.GalleryProcessing;
 import com.qualcomm.snapdragon.sdk.sample.R;
 
 /**
@@ -37,6 +38,16 @@ public class MainActivity extends Activity {
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, FacialRecognitionActivity.class);
                 intent.putExtra(EXTRA_MSG, "call facial recog sample");
+                startActivity(intent);
+            }
+        });
+
+        Button galleryBtn = (Button) this.findViewById((R.id.btn_gallery));
+        galleryBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, GalleryProcessing.class);
+                intent.putExtra(EXTRA_MSG, "call gallery processing sample");
                 startActivity(intent);
             }
         });

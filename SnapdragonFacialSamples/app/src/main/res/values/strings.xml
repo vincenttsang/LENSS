@@ -15,5 +15,6 @@
     <string name="title_activity_choose_user">ChooseUser</string>
     <string name="title_activity_live_recognition">LiveRecognition</string>
     <string name="description">Description</string>
+    <string name="selectText">Choose from Gallery</string>
 
 </resources>
