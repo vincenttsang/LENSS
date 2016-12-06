@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.qualcomm.sdk.smartshutterapp.SmartShutterActivity;
 import com.qualcomm.snapdragon.sdk.recognition.sample.FacialRecognitionActivity;
 import com.qualcomm.snapdragon.sdk.sample.CameraPreviewActivity;
 import com.qualcomm.snapdragon.sdk.sample.GalleryProcessing;
@@ -48,6 +49,16 @@ public class MainActivity extends Activity {
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, GalleryProcessing.class);
                 intent.putExtra(EXTRA_MSG, "call gallery processing sample");
+                startActivity(intent);
+            }
+        });
+
+        Button shuttleBtn = (Button) this.findViewById(R.id.btn_shuttle);
+        shuttleBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, SmartShutterActivity.class);
+                intent.putExtra(EXTRA_MSG, "call smart shuttle sample");
                 startActivity(intent);
             }
         });

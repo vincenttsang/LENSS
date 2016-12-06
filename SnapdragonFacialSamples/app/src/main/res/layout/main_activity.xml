@@ -20,4 +20,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/btn_gallery" />
+
+    <Button
+        android:text="SmartShuttle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_shuttle" />
 </LinearLayout>
