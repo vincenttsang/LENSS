@@ -23,6 +23,7 @@ public class CamStreamDistributor extends Distributor {
     }
 
     public void execute(){
+        // whether we still needs to find GoP here?
         byte[] frames = new byte[BUF_SIZE];
         int datalen = 0;
         int rem_pics = 0;
